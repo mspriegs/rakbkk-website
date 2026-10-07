@@ -1,0 +1,68 @@
+/* RAK BKK — house style (loaded last).
+   Follows Brand Guidelines V3: headings in a clean geometric sans, set in capitals;
+   the display serif is kept for the logo only. Fewer labels and ornaments, more photography. */
+
+:root { --display: 'Jost', 'Futura', 'Avenir Next', Arial, sans-serif; }
+
+/* ---- Type ---- */
+h1, h2, h3, h2.big, .thesis, .close, .addr, .pack h3, .ev h3, .formats b, .person b, .fund .amt,
+.home-opening h1, .phero h1, .cintro h1 {
+  font-family: var(--sans);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  line-height: 1.02;
+}
+.home-opening h1, .phero h1, .cintro h1 { font-size: clamp(44px, 5.4vw, 78px); letter-spacing: .01em; max-width: 12ch; }
+h2.big { font-size: clamp(30px, 3.6vw, 48px); max-width: 18ch; letter-spacing: .02em; }
+.pack h3, .ev h3 { font-size: 22px; letter-spacing: .08em; }
+.formats b, .person b { font-size: 20px; letter-spacing: .08em; }
+.addr { font-size: 22px; line-height: 1.35; letter-spacing: .06em; }
+.sub, .intro2, .lede { font-weight: 300; }
+
+/* Prices and figures: plain, confident, no serif */
+.pack .price, .lite em, .ticket .p, .fl h3 span, .floor-total, .example .v, .cap .v {
+  font-family: var(--sans); font-weight: 400; letter-spacing: 0; text-transform: none;
+}
+.pack .price small { letter-spacing: .12em; }
+
+/* Quotes: large, human, sentence case */
+.q p, .tq p, blockquote.q p, .tq.lead p, .quote p {
+  font-family: var(--sans); font-weight: 300; letter-spacing: -.005em; text-transform: none; line-height: 1.25;
+}
+
+/* ---- Strip the template ornaments ---- */
+.review, .label, .eyebrow, .dia, .note10 i, .three svg, .hood3 svg, .ico,
+.slotq, .tq.slot, .opening-caption { display: none !important; }
+.label + h2.big, .label + h2 { margin-top: 0; }
+
+/* ---- Buttons: charcoal, not terracotta ---- */
+.btn { border-radius: 0; }
+.btn.solid { background: var(--ink); border-color: var(--ink); color: var(--ground); }
+.btn.solid:hover { background: var(--terra); border-color: var(--terra); color: #fff; }
+form.enq button, form.join button, form.art button { background: var(--ink); }
+
+/* ---- A dark "proof" band so the page has rhythm ---- */
+.proof { background: var(--ink); color: var(--ground); max-width: none; padding-left: 0; padding-right: 0; margin-top: 80px; padding-bottom: 80px !important; }
+.proof .proof-grid { max-width: 1320px; margin: 0 auto; padding: 0 clamp(24px, 4vw, 64px); }
+.proof h2.big, .proof .q p { color: var(--ground); }
+.proof .q cite, .proof figcaption { color: var(--sand); }
+
+/* ---- Video ---- */
+figure.vid { margin: 0; }
+figure.vid video { display: block; width: 100%; max-width: 420px; aspect-ratio: 9 / 16; object-fit: cover; background: #1d1a17; }
+.proof-grid { grid-template-columns: minmax(0, 420px) 1fr !important; }
+.tq-row { display: grid; grid-template-columns: minmax(0, 360px) 1fr; gap: 48px; align-items: center; }
+.tq-row .tq.lead { margin: 0; }
+@media (max-width: 860px) {
+  .proof-grid, .tq-row { grid-template-columns: 1fr !important; }
+  figure.vid video { max-width: 100%; max-height: 80vh; margin: 0 auto; }
+}
+
+/* ---- Sam: make the fee and role unmistakable ---- */
+.fee { display: inline-block; font-size: 15px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--terra); margin: 0 0 16px; }
+
+/* ---- Calmer cards ---- */
+.pack, .ev, .fund, .person, .formats div, .ticket, .fac { background: transparent; }
+.formats div, .person { border-top: 1px solid var(--ink); padding-left: 0; padding-right: 0; }
+.topics span { background: transparent; }
