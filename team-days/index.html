@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Take the whole house for the day. Team Days at RAK BKK, Bang Rak, for teams of 6 to 20.">
-<meta property="og:title" content="RAK BKK Team Days">
-<meta property="og:description" content="Take the whole house for the day. For teams of 6 to 20 in Bang Rak, Bangkok.">
+<meta name="description" content="A whole house for your next team day. Private team days at RAK BKK, Bang Rak, for teams of 6 to 20.">
+<meta property="og:title" content="Private Team Days · RAK BKK">
+<meta property="og:description" content="A whole house for your next team day. For teams of 6 to 20 in Bang Rak, Bangkok. From ฿25,000 for the day.">
 <meta property="og:image" content="https://rakbkk.co/team-days/img/facade.jpg">
-<style>img{max-width:100%}[hidden]{display:none!important}body{margin:0}</style>
-<title>Team Days · RAK BKK</title>
+<style>img{max-width:100%}[hidden]{display:none!important}body{margin:0}html{scroll-behavior:smooth}</style>
+<title>Private Team Days · RAK BKK</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap">
 <style>
@@ -44,6 +44,7 @@ header{display:grid;gap:18px;border-bottom:1px solid var(--line);padding-bottom:
 .logo{display:block;aspect-ratio:900/176;background:var(--ink);-webkit-mask:url(img/logo.png) center/contain no-repeat;mask:url(img/logo.png) center/contain no-repeat}
 .brand .logo{width:clamp(170px,30vw,240px)}
 .cta .logo{width:150px;background:var(--ivory)}
+.cta{scroll-margin-top:16px}
 footer .logo{width:110px;margin:0 auto 10px;background:var(--muted)}
 .brand span{color:var(--muted)}
 h1 em{font-style:italic;color:var(--terracotta)}
@@ -122,30 +123,61 @@ input[type=range]{flex:1;accent-color:var(--terracotta)}
 .mail button:focus-visible{outline:2px solid var(--ivory);outline-offset:2px}
 footer{font-size:.85rem;color:var(--muted);text-align:center}
 @media (prefers-reduced-motion:no-preference){.grand .amt{transition:color .2s}}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;font:600 .95rem var(--body);padding:12px 20px;border-radius:4px;text-decoration:none;border:1px solid var(--ink);cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--ivory)}
+.btn.secondary{background:transparent;color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--terracotta);outline-offset:2px}
+.from{font-size:1.05rem}
+.from b{font-weight:600}
+.tier .min{font-size:.9rem;color:var(--ink);font-weight:500;margin-top:-6px}
+.extras{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.extras div{border-top:2px solid var(--oak);padding-top:12px;display:grid;gap:6px;align-content:start}
+.extras p{color:var(--muted);font-size:.95rem}
+.faq{display:grid;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq details p{color:var(--muted);margin-top:8px;max-width:62ch}
+.enq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.enq > *{min-width:0}
+.enq .full{grid-column:1/-1}
+.enq label{display:grid;gap:4px;font-size:.85rem;color:var(--sand)}
+.enq input,.enq select,.enq textarea{font:400 1rem var(--body);padding:10px 12px;border-radius:4px;border:1px solid var(--muted);background:var(--ivory);color:var(--ink);width:100%}
+.enq textarea{min-height:80px;resize:vertical}
+.enq button{justify-self:start;background:var(--terracotta);color:#fff;border:0;border-radius:4px;padding:12px 20px;font:600 .95rem var(--body);cursor:pointer}
+.enq button:focus-visible{outline:2px solid var(--ivory);outline-offset:2px}
+@media (max-width:560px){.enq{grid-template-columns:1fr}}
+.sent{background:var(--card);color:var(--ink);border-radius:6px;padding:14px 16px;font-size:.92rem;display:grid;gap:8px}
+.sent pre{margin:0;white-space:pre-wrap;font:400 .9rem/1.5 var(--body);color:var(--muted)}
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <div class="brand"><span class="logo" role="img" aria-label="RAK BKK"></span><span>รัก แบงค็อก · Charoen Krung Soi 45, Bang Rak</span></div>
-  <p class="eyebrow">Team Days for small local teams</p>
-  <h1>Take the whole house <em>for the day.</em></h1>
-  <p class="lede">A restored heritage house in Bang Rak, yours from 9:00 to 17:00 for a team of 6 to 20. Plan the quarter, run a workshop, or just get out of the office. Coffee is on, the screen is ready, and nobody else is in the building.</p>
+  <p class="eyebrow">Private team days in Bang Rak</p>
+  <h1>A whole house for your <em>next team day.</em></h1>
+  <p class="lede">Bring your team together in a restored heritage house in Bang Rak. From 9:00 to 17:00, both floors are exclusively yours, with space to plan together, break into smaller groups and share lunch.</p>
+  <p class="from">For teams of 6–20. <b>From ฿25,000 for the day.</b></p>
+  <div class="btns"><a class="btn primary" href="#enquire">Check your date</a><a class="btn secondary" href="#packages">See packages and prices</a></div>
 </header>
+
 <figure class="hero-img">
   <img src="img/facade.jpg" alt="The front of RAK BKK: a restored two-storey shophouse with timber doors, rattan chairs and plants">
 </figure>
+
 <section>
-  <p class="eyebrow">What's included</p>
+  <p class="eyebrow">What every Team Day includes</p>
   <div class="always">
-    <div><b>The whole house, privately</b><small>No other guests, 9:00–17:00</small></div>
-    <div><b>Modular space</b><small>Set up as one long table, workshop pods or a circle</small></div>
-    <div><b>Screen, sound and mics</b><small>Plug in a laptop and present</small></div>
-    <div><b>Self-service coffee and tea</b><small>All day, plus water and snacks</small></div>
-    <div><b>Karaoke room</b><small>For breakout calls or the 16:30 finale</small></div>
-    <div><b>Fast Wi‑Fi and quiet corners</b><small>For the calls that can't wait</small></div>
+    <div><b>Exclusive use of both floors</b><small>The whole house for your team, 9:00–17:00</small></div>
+    <div><b>Working and breakout spaces</b><small>A large table, two breakout rooms and a big room downstairs, set up the way you agree with us</small></div>
+    <div><b>Screen, sound, microphones and Wi‑Fi</b><small>Plug in a laptop and present</small></div>
+    <div><b>Self-service refreshments</b><small>Coffee, tea, drinking water and snacks through the day</small></div>
+    <div><b>Welcome and house tour</b><small>We show you around and check the equipment with you when you arrive</small></div>
+    <div><b>Karaoke room</b><small>For a breakout, or an optional finish to the day</small></div>
   </div>
 </section>
+
 <section>
   <p class="eyebrow">The house</p>
   <h2>Two floors, both yours</h2>
@@ -157,7 +189,7 @@ footer{font-size:.85rem;color:var(--muted);text-align:center}
         <figure><img src="img/whiteboard-room.jpg" alt="The whiteboard room upstairs, with armchairs and a wall of paper tiles" loading="lazy"></figure>
       </div>
       <ul>
-        <li><b>Large working table</b><small>The whole team around one table</small></li>
+        <li><b>Large working table</b><small>For planning sessions together</small></li>
         <li><b>Chalkboard room</b><small>Breakout room for a small group</small></li>
         <li><b>Whiteboard room</b><small>Breakout room for a small group</small></li>
         <li><b>Conversation pit</b><small>Sunken seating for open discussion and retros</small></li>
@@ -171,16 +203,12 @@ footer{font-size:.85rem;color:var(--muted);text-align:center}
         <figure><img src="img/karaoke-room.jpg" alt="The karaoke room with curved white sofas and a checked rug" loading="lazy"></figure>
       </div>
       <ul>
-        <li><b>The big room</b><small>Modular space for all-hands, presentations or workshops, and a dance floor after hours</small></li>
-        <li><b>Long bar</b><small>For lunch and evening drinks</small></li>
+        <li><b>The big room</b><small>Modular space for all-hands, presentations or workshops</small></li>
+        <li><b>Long bar</b><small>Where you have lunch together</small></li>
         <li><b>Karaoke room</b><small>For a breakout, or the finale</small></li>
       </ul>
     </div>
   </div>
-</section>
-<section>
-  <p class="eyebrow">At the house</p>
-  <h2>Life at RAK BKK</h2>
   <div class="past">
     <figure><img src="img/workshop.jpg" alt="A team workshop in the big room downstairs" loading="lazy"></figure>
     <figure><img src="img/launch-night.jpg" alt="Guests talking by the long bar at an evening event" loading="lazy"></figure>
@@ -188,128 +216,161 @@ footer{font-size:.85rem;color:var(--muted);text-align:center}
     <figure><img src="img/paper-wall.jpg" alt="Three guests posing beside a paper heart on the wall upstairs" loading="lazy"></figure>
   </div>
 </section>
-<section>
-  <p class="eyebrow">Choose your day</p>
+
+<section id="packages">
+  <p class="eyebrow">Packages and prices</p>
   <h2>Two ways to book</h2>
   <div class="tiers">
     <div class="tier">
-      <h3>Day Pass</h3>
+      <h3>Private Team Day</h3>
       <div class="price num">฿1,888 <small>per person</small></div>
-      <ul><li>Everything listed under What's included</li><li>Bring your own lunch or order in</li></ul>
+      <p class="min">Minimum booking ฿25,000</p>
+      <ul><li>Everything in every Team Day</li><li>Bring your own lunch or order in</li></ul>
     </div>
     <div class="tier pick">
       <span class="tag">Recommended</span>
-      <h3>Day + Lunch</h3>
+      <h3>Team Day + Lunch</h3>
       <div class="price num">฿2,888 <small>per person</small></div>
-      <ul><li>Everything in Day Pass</li><li>Set lunch from a neighbourhood kitchen</li><li>Host welcome and house tour</li></ul>
+      <p class="min">Minimum booking ฿25,000</p>
+      <ul><li>Everything in Private Team Day</li><li>A set Thai lunch from a neighbourhood kitchen, served downstairs</li><li>Tell us about dietary needs when you enquire</li></ul>
     </div>
   </div>
-  <p class="fine">Minimum spend ฿25,000 per day. Up to 20 people. For larger groups or a facilitated leadership day, ask about our full-day buyouts.</p>
-</section>
-<section>
-  <p class="eyebrow">Price your day</p>
-  <h2>See what your team would pay</h2>
+  <p class="fine">The minimum applies to the package total, including lunch. For a facilitated leadership day, ask us about a tailored package.</p>
+
   <form class="builder" id="builder">
     <div class="controls">
       <fieldset>
         <legend>Package</legend>
         <div class="seg">
-          <label><input type="radio" name="pkg" id="pkg-pass" value="1888"><span>Day Pass</span></label>
-          <label><input type="radio" name="pkg" id="pkg-lunch" value="2888" checked><span>Day + Lunch</span></label>
+          <label><input type="radio" name="pkg" id="pkg-pass" value="1888"><span>Private Team Day</span></label>
+          <label><input type="radio" name="pkg" id="pkg-lunch" value="2888" checked><span>Team Day + Lunch</span></label>
         </div>
       </fieldset>
       <fieldset>
         <legend><label for="size">Team size</label></legend>
-        <div class="range"><input type="range" id="size" min="6" max="20" value="12"><output id="sizeOut" class="num">12</output></div>
+        <div class="range"><input type="range" id="size" min="6" max="20" step="1" value="12"><output id="sizeOut" class="num">12</output></div>
       </fieldset>
-      <fieldset>
-        <legend>Extras</legend>
-        <label class="check"><input type="checkbox" id="returning"><span>Returning team<small>10% off a second booking within 3 months</small></span></label>
-      </fieldset>
+      <p class="fine">Extras such as evening drinks or outings are quoted separately and are not in this total.</p>
     </div>
     <div class="total" aria-live="polite">
-      <div class="line"><span id="lPkg">Day + Lunch × 12</span><span id="vPkg">฿34,656</span></div>
-      <div class="line" id="rowMin" hidden><span>Top-up to minimum spend</span><span id="vMin">฿0</span></div>
-      <div class="line" id="rowDisc" hidden><span>Returning team −10%</span><span id="vDisc">−฿0</span></div>
+      <div class="line"><span id="lPkg">Team Day + Lunch × 12</span><span id="vPkg">฿34,656</span></div>
+      <div class="line" id="rowMin" hidden><span>Minimum-booking adjustment</span><span id="vMin">฿0</span></div>
       <div class="grand">
         <div class="line"><span>Total for the day</span><span id="vPer" class="fine">฿2,888 per person</span></div>
         <div class="amt num" id="vTotal">฿34,656</div>
       </div>
-      <p class="note" id="minNote" hidden>Small teams pay the ฿25,000 minimum, since you have the whole house.</p>
+      <p class="note" id="minNote" hidden>Bookings start at ฿25,000, as your team has the whole house.</p>
+      <p class="fine">Your quote will confirm VAT and any other charges.</p>
     </div>
   </form>
 </section>
+
 <section>
   <p class="eyebrow">An example day</p>
-  <h2>A 12-person team on Day + Lunch</h2>
+  <h2>A 12-person team on Team Day + Lunch</h2>
   <div class="day">
-    <div><time>09:00</time><p>Arrive, coffee, quick tour of the house<small>Your host shows you the Wi‑Fi, the screen and where everything is, then leaves you to it.</small></p></div>
-    <div><time>09:30</time><p>Morning session<small>Planning at the large table upstairs, then split into the chalkboard and whiteboard rooms.</small></p></div>
-    <div><time>12:30</time><p>Lunch together<small>A set Thai lunch from a kitchen on our street, served at the long bar downstairs.</small></p></div>
-    <div><time>14:00</time><p>Afternoon session<small>Back to the breakout rooms, or the whole team in the big room downstairs for a workshop.</small></p></div>
-    <div><time>15:30</time><p>Debrief<small>Regroup in the conversation pit to share what each group worked on.</small></p></div>
-    <div><time>16:30</time><p>Wrap up<small>Present back to the whole team in the big room downstairs and agree next steps. Then close the day in the karaoke room.</small></p></div>
+    <div><time>09:00</time><p>Arrival, coffee, house tour and equipment check</p></div>
+    <div><time>09:30</time><p>Morning planning session and small-group work<small>At the large table upstairs, then into the chalkboard and whiteboard rooms.</small></p></div>
+    <div><time>12:30</time><p>Lunch together downstairs</p></div>
+    <div><time>14:00</time><p>Afternoon workshop<small>In the big room downstairs, or back in the breakout rooms.</small></p></div>
+    <div><time>15:15</time><p>Coffee break</p></div>
+    <div><time>15:30</time><p>Share conclusions and agree actions<small>In the conversation pit or the big room.</small></p></div>
+    <div><time>16:30</time><p>Wrap up, with optional karaoke to finish</p></div>
+    <div><time>17:00</time><p>Team Day ends</p></div>
   </div>
   <div class="example"><span>12 people × ฿2,888</span><b class="num">฿34,656 for the day</b></div>
 </section>
+
 <section>
-  <p class="eyebrow">Add to any day</p>
-  <h2>Extras</h2>
-  <p class="fine">Have something else in mind? Tell us when you enquire and we'll see what we can arrange. Requests are quoted separately.</p>
-  <div class="addons">
-    <div><span>Evening drinks at the long bar, 17:00–19:00</span><span>Ask us</span></div>
-    <div><span>Art walk through Bang Rak's galleries and shophouses</span><span>On request</span></div>
-    <div><span>Boat trip on the Chao Phraya, from Si Phraya Pier</span><span>On request</span></div>
-    <div><span>Neighbourhood food tour</span><span>On request</span></div>
-    <div><span>Coffee with a local artist or musician, 30 minutes</span><span>Ask us</span></div>
-    <div><span>Facilitated session with our in-house coach, 2 hours</span><span>Quoted per team</span></div>
-    <div><span>Returning team, second booking within 3 months</span><span>10% off</span></div>
+  <p class="eyebrow">Optional extras</p>
+  <h2>Make more of the day</h2>
+  <div class="extras">
+    <div><h3>Stay for drinks</h3><p>Evening use of the long bar, 17:00–19:00.</p></div>
+    <div><h3>Explore Bang Rak</h3><p>An art walk, a neighbourhood food tour, a river trip or a conversation with a local creative.</p></div>
+    <div><h3>Add a facilitated session</h3><p>A session with our in-house coach, quoted for your team.</p></div>
   </div>
+  <p class="fine">Subject to availability. Quoted separately.</p>
 </section>
+
 <section>
   <p class="eyebrow">Getting here</p>
   <div class="practical">
-    <div><b>Where</b><p>Charoen Krung Soi 45, Bang Rak, in Bangkok's oldest creative district.</p></div>
+    <div><b>Where</b><p>Charoen Krung Soi 45, in Bang Rak's creative neighbourhood.</p></div>
     <div><b>By boat</b><p>Si Phraya Pier, then about a 10 minute walk.</p></div>
     <div><b>By BTS</b><p>Saphan Taksin, then a 15–20 minute walk or a short taxi.</p></div>
-    <div><b>Hours</b><p>Team Days run 9:00–17:00, any weekday. Weekends on request.</p></div>
+    <div><b>Hours</b><p>Team Days run 9:00–17:00.</p></div>
   </div>
 </section>
-<section class="cta">
+
+<section>
+  <p class="eyebrow">Questions</p>
+  <h2>Before you book</h2>
+  <div class="faq">
+    <details><summary>Do prices include VAT? Can we get a company invoice?</summary><p>Your quote will set out VAT and invoicing clearly before you confirm.</p></details>
+    <details><summary>How do deposits, payment and cancellations work?</summary><p>We'll include payment, date-change and cancellation terms in your quote.</p></details>
+    <details><summary>When do you need our final headcount and dietary needs?</summary><p>Tell us your best estimate when you enquire. Your quote will give the date we need final numbers and dietary needs by.</p></details>
+    <details><summary>Can we bring our own food or order delivery?</summary><p>Yes, on a Private Team Day you can bring your own lunch or order in. Let us know your plan when you enquire.</p></details>
+    <details><summary>Can we arrive earlier or stay later?</summary><p>Ask us when you enquire. Evening drinks at the long bar until 19:00 are available as an extra.</p></details>
+    <details><summary>Is the house accessible?</summary><p>The upstairs rooms are reached by stairs. Tell us about any access needs and we'll talk through how to plan the day.</p></details>
+  </div>
+</section>
+
+<section class="cta" id="enquire">
   <span class="logo" role="img" aria-label="RAK BKK"></span>
-  <h2>Hold a date</h2>
-  <p>Tell us your team size, the date you have in mind and which package you like. We'll confirm within two working days.</p>
+  <h2>Check your date</h2>
+  <p>Tell us your preferred date, team size and package. We'll check availability and send you a clear quote within two working days.</p>
+  <form class="enq" id="enq">
+    <label>Your name<input id="f-name" name="name" required autocomplete="name"></label>
+    <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
+    <label>Preferred date<input id="f-date" name="date" type="date"></label>
+    <label>Team size<input id="f-size" name="size" type="number" min="6" max="20" value="12"></label>
+    <label>Package<select id="f-pkg" name="pkg"><option>Team Day + Lunch</option><option>Private Team Day</option><option>Not sure yet</option></select></label>
+    <label>Email or phone<input id="f-contact" name="contact" required autocomplete="email"></label>
+    <label class="full">Anything else? (optional)<textarea id="f-note" name="note" placeholder="Dietary or access needs, extras you're interested in"></textarea></label>
+    <button type="submit">Send enquiry</button>
+  </form>
+  <div class="sent" id="sent" hidden>
+    <b>Your email app should open with this enquiry addressed to us. If it doesn't, copy the text below and send it to hello@rakbkk.co.</b>
+    <pre id="sentText"></pre>
+  </div>
   <div class="mail"><code id="email">hello@rakbkk.co</code><button type="button" id="copy">Copy email</button></div>
 </section>
+
 <footer><span class="logo" role="img" aria-label="RAK BKK"></span>รัก แบงค็อก · History re-imagined · Prices in Thai baht</footer>
 </div>
 <script>
 (function(){
   const MIN = 25000;
-  const names = {"1888":"Day Pass","2888":"Day + Lunch"};
+  const names = {"1888":"Private Team Day","2888":"Team Day + Lunch"};
   const $ = id => document.getElementById(id);
   const fmt = n => "฿" + Math.round(n).toLocaleString("en-US");
   function calc(){
     const rate = +document.querySelector('input[name="pkg"]:checked').value;
-    const n = +$("size").value;
+    const n = Math.round(+$("size").value);
     $("sizeOut").textContent = n;
     const base = rate * n;
     const topUp = Math.max(0, MIN - base);
-    const sub = base + topUp;
-    const disc = $("returning").checked ? sub * 0.10 : 0;
-    const total = sub - disc;
+    const total = base + topUp;
     $("lPkg").textContent = names[rate] + " × " + n;
     $("vPkg").textContent = fmt(base);
     $("rowMin").hidden = !topUp; $("minNote").hidden = !topUp;
     $("vMin").textContent = fmt(topUp);
-    $("rowDisc").hidden = !disc;
-    $("vDisc").textContent = "−" + fmt(disc);
     $("vTotal").textContent = fmt(total);
-    $("vPer").textContent = fmt(total / n) + " per person";
+    $("vPer").textContent = (topUp ? "Approximately " : "") + fmt(total / n) + " per person";
   }
   $("builder").addEventListener("input", calc);
   $("builder").addEventListener("submit", e => e.preventDefault());
   calc();
+  $("enq").addEventListener("submit", function(e){
+    e.preventDefault();
+    const v = id => $(id).value.trim();
+    const text = "Name: " + v("f-name") + "\nCompany: " + v("f-company") + "\nPreferred date: " + (v("f-date") || "flexible") +
+      "\nTeam size: " + v("f-size") + "\nPackage: " + v("f-pkg") + "\nContact: " + v("f-contact") + (v("f-note") ? "\nNotes: " + v("f-note") : "");
+    $("sentText").textContent = text;
+    $("sent").hidden = false;
+    const subject = "Team Day enquiry" + (v("f-company") ? " – " + v("f-company") : "");
+    location.href = "mailto:hello@rakbkk.co?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
+  });
   $("copy").addEventListener("click", function(){
     const btn = this, done = () => { btn.textContent = "Copied"; setTimeout(() => btn.textContent = "Copy email", 1800); };
     try {
