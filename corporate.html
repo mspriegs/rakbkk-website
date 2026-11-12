@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Corporate buyouts · RAK BKK</title>
+<title>Leadership retreats &amp; corporate buyouts · RAK BKK</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:wght@300;400;500&display=swap">
@@ -248,6 +248,56 @@
   }
   .thb { font-size:.6em; color:var(--soft); white-space:nowrap; }
   .prices .thb { display:block; font-size:13px; margin-top:2px; }
+
+  /* corporate page v2 (Nov 2026) */
+  .trust { font-size:14px; letter-spacing:.06em; color:var(--soft); margin:22px 0 0; padding-top:14px; border-top:1px solid var(--rule); max-width:44ch; }
+  .trust b { font-weight:500; color:var(--ink); }
+  .why { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; border-top:1px solid var(--ink); padding-top:20px; }
+  @media (max-width:820px) { .why { grid-template-columns:1fr; gap:20px; } }
+  .why div { display:flex; flex-direction:column; gap:8px; }
+  .why b { font-family:var(--display); font-weight:400; font-size:28px; line-height:1.15; }
+  .why span { color:var(--soft); font-size:17px; }
+  details.more { margin:4px 0 18px; }
+  details.more summary, .offers summary { cursor:pointer; list-style:none; font-size:13px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:var(--terra); }
+  details.more summary::-webkit-details-marker, .offers summary::-webkit-details-marker { display:none; }
+  details.more summary::after, .offers summary::after { content:" +"; }
+  details.more[open] summary::after, .offers details[open] summary::after { content:" –"; }
+  details.more p { color:var(--soft); margin:12px 0 0; }
+  .how3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; border-top:1px solid var(--ink); padding-top:14px; margin-top:8px; }
+  @media (max-width:640px) { .how3 { grid-template-columns:1fr; gap:12px; } }
+  .how3 b { display:block; font-size:13px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--oak); margin-bottom:4px; }
+  .how3 span { font-size:16px; color:var(--soft); }
+  .offers { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:820px) { .offers { grid-template-columns:1fr; } }
+  .offers article { background:var(--panel); padding:28px; display:flex; flex-direction:column; gap:10px; }
+  .offers .for { margin:0; font-size:13px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--terra); }
+  .offers h3 { font-family:var(--display); font-weight:400; font-size:34px; line-height:1.1; margin:0; }
+  .offers p { margin:0; }
+  .offers details p { color:var(--soft); margin-top:10px; font-size:17px; }
+  .offers details { margin-top:auto; padding-top:6px; }
+  .amos { display:grid; grid-template-columns:1fr 1fr 1.4fr; gap:10px; }
+  .amos img { display:block; width:100%; height:380px; object-fit:cover; }
+  @media (max-width:760px) { .amos { grid-template-columns:1fr 1fr; } .amos img { height:220px; } .amos img:last-child { grid-column:span 2; } }
+  .acts { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  @media (max-width:1000px) { .acts { grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px) { .acts { grid-template-columns:1fr; } }
+  .acts article { border-top:1px solid var(--ink); padding-top:14px; display:flex; flex-direction:column; gap:8px; }
+  .acts article.feat { grid-column:span 2; background:var(--panel); border-top:0; padding:28px; }
+  @media (max-width:560px) { .acts article.feat { grid-column:auto; padding:22px; } }
+  .acts .tag { font-size:12px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--oak); }
+  .acts h3 { margin:0; font-size:15px; font-weight:500; letter-spacing:.14em; text-transform:uppercase; }
+  .acts .feat h3 { font-family:var(--display); font-size:34px; letter-spacing:0; text-transform:none; font-weight:400; line-height:1.1; }
+  .acts p { margin:0; color:var(--soft); font-size:16px; }
+  .acts .feat p { font-size:17px; }
+  ol.steps { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:20px; counter-reset:s; }
+  @media (max-width:900px) { ol.steps { grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px) { ol.steps { grid-template-columns:1fr; } }
+  ol.steps li { counter-increment:s; border-top:1px solid var(--ink); padding-top:12px; display:flex; flex-direction:column; gap:6px; }
+  ol.steps li::before { content:counter(s,decimal-leading-zero); font-family:var(--display); font-size:34px; color:var(--terra); line-height:1; }
+  ol.steps b { font-weight:500; }
+  .tq.lead, .tq.lead p { color:var(--ink); }
+  .tq.lead cite { color:var(--soft); }
+  ol.steps span { color:var(--soft); font-size:16px; }
 </style>
 <link rel="stylesheet" href="editorial.css">
 <link rel="stylesheet" href="house.css">
@@ -262,10 +312,13 @@
       <a href="our-story.html">Our story</a>
       <a href="corporate.html" aria-current="page" style="color:var(--ink)">Corporate</a>
       <a href="artists.html">Artists</a>
-      <a href="community.html">Community</a>
-      <a href="chamber-nights.html">Chamber Nights</a>
-      <a href="neighbourhood.html">Neighbourhood</a>
-      <a href="index.html#visit">Visit</a>
+      <div class="navgroup">
+        <a href="community.html" class="navgroup-top">Community</a>
+        <div class="navgroup-menu">
+          <a href="chamber-nights.html">Chamber Nights</a>
+          <a href="neighbourhood.html">Neighbourhood</a>
+        </div>
+      </div>
     </nav>
     <a class="btn solid" href="corporate.html#ask">Book a walk-through</a>
   </div>
@@ -274,12 +327,23 @@
 <main id="top">
   <section class="phero wrap" aria-labelledby="c-h">
     <div>
-      <p class="eyebrow" style="text-align:left">Corporate buyouts</p>
+      <p class="eyebrow" style="text-align:left">Leadership retreats &amp; corporate buyouts</p>
       <h1 id="c-h">A day your team will actually talk about.</h1>
-      <p class="sub">Full-day buyouts, team resets and private evenings in a restored shophouse on Charoen Krung. The whole house is yours, from breakfast to sunset, with our in-house facilitator if you want one.</p>
-      <div class="ctas"><a class="btn solid" href="#ask">Book a walk-through</a><a class="btn" href="#packages">Compare packages</a></div>
+      <p class="sub">A restored shophouse on Charoen Krung, yours for the day. Bring your leaders somewhere they can think, reconnect and work through what matters, with an experienced facilitator to design the day around your purpose.</p>
+      <div class="ctas"><a class="btn solid" href="#ask">Plan your retreat</a><a class="btn" href="#sam">Meet your facilitator</a></div>
+      <p class="trust">Recently hosted <b>Accor's MEAPAC commercial leadership team</b></p>
     </div>
-    <img src="img/3.jpg" alt="Sam Bobertz leading Accor's leadership team in a workshop on the ground floor" style="object-position:center 40%">
+    <img src="img/accor-retreat-12.jpg" alt="Sam Bobertz facilitating a session with Accor's leadership team on the ground floor of RAK BKK" style="object-position:center 55%">
+  </section>
+
+  <section class="sec wrap" aria-labelledby="w-h">
+    <p class="label">Why teams come here</p>
+    <h2 class="big" id="w-h">Time together that's worth the time</h2>
+    <div class="why">
+      <div><b>A house, not a ballroom</b><span>Two floors, private rooms and a courtyard feel, a world away from the office. The whole place is yours, so people relax and talk.</span></div>
+      <div><b>A process, not just a room</b><span>An experienced facilitator prepares with you, designs the day and adapts it to the people in the room, so you can take part rather than run it.</span></div>
+      <div><b>Play with a purpose</b><span>Hands-on activities that get people out of their chairs and meeting each other differently. Curiosity first, then better conversations.</span></div>
+    </div>
   </section>
 
   <section class="sec wrap" id="packages" aria-labelledby="p-h">
@@ -290,52 +354,124 @@
       <div><b>Half-Day Reset</b><span>Up to 20 · 4 hours · the ground floor</span><em>From $4,500 <span class="thb">(฿149,000)</span></em></div>
       <div><b>Evening Buyout</b><span>Up to 70 standing · 4 hours · the ground floor</span><em>From $2,000 <span class="thb">(฿66,000)</span></em></div>
     </div>
-    <p class="fine">Includes locally sourced snacks and non-alcoholic drinks. Staff and AV included. Music, art walks, food tours and our in-house facilitator can be added for an additional fee. Weekday prices before VAT. Baht prices are approximate, at about ฿33 to the dollar.</p>
+    <p class="fine">Includes locally sourced snacks and non-alcoholic drinks. Staff and AV included. Music, art walks, food tours, team activities and our in-house facilitator can be added for an additional fee. Weekday prices before VAT. Baht prices are approximate, at about ฿33 to the dollar.</p>
   </section>
 
-
-  <section class="sec wrap" aria-labelledby="s-h">
+  <section class="sec wrap" id="sam" aria-labelledby="s-h">
     <p class="label">Our in-house facilitator · additional fee</p>
     <div class="fac">
-      <img src="img/3.jpg" alt="Sam Bobertz, in a pink shirt, leading a workshop">
+      <img src="img/accor-retreat-10.jpg" alt="Sam Bobertz, in a pink shirt, facilitating a session" style="object-position:center 20%">
       <div>
-        <h2 class="big" id="s-h" style="margin-bottom:10px">Sam Bobertz</h2>
-        <p class="fee">RAK BKK's in-house facilitator. Add him to any booking for an additional fee.</p>
-        <p>Sam is a certified Workplace Big Five consultant and coach. He uses this powerful tool to help teams build confident communication, storytelling and presentation skills, emotional and social awareness, facilitation and coaching skills, creativity and a growth mindset.</p>
-        <p style="color:var(--soft)">Sam designs each workshop around what your team needs right now, then leads it in the room with you. No slides, no lectures: real conversation, practical tools and commitments the team makes to each other.</p>
-        <div class="topics"><span>Confident communication</span><span>Storytelling</span><span>Emotional &amp; social awareness</span><span>Facilitation &amp; coaching</span><span>Creativity</span><span>Growth mindset</span></div>
-        <a class="btn solid" href="#ask">Ask about adding Sam</a>
+        <h2 class="big" id="s-h" style="margin-bottom:4px">Sam Bobertz</h2>
+        <p class="fee">Leadership facilitation &amp; experience design</p>
+        <p>Sam helps leaders and teams give purposeful attention to how they work together, especially when the pace of work has left little room to reflect, reconnect or consider what needs to change.</p>
+        <p style="color:var(--soft)">Since 2014 he has facilitated and coached leaders across Asia, Europe and North America, including contributions to leadership development programmes for BASF, Astellas and Manulife. Organisations bring him in to strengthen communication, develop leadership practice, explore team culture and navigate change.</p>
+        <details class="more">
+          <summary>More about Sam</summary>
+          <p>Born and raised in Hong Kong, with American and Japanese heritage and a decade spent living in mainland China, Sam brings a lived perspective on working across cultures. He is attentive to the different meanings people give to respect, responsibility and disagreement, and to the unspoken expectations that shape whose voices are heard and how a team works together.</p>
+          <p>His practice brings together facilitated dialogue, mindful reflection, creative and embodied exploration, and practical experience. He helps people connect what they notice, what they care about and how they choose to act, while making space to clarify strategic priorities and work through complex problems.</p>
+          <p>At RAK BKK, Sam designs and leads leadership retreats and team experiences that extend the house's spirit of human connection and play into working life.</p>
+        </details>
+        <div class="how3">
+          <div><b>Before</b><span>Sam talks with you about your purpose, your group and what you need from the time.</span></div>
+          <div><b>Design</b><span>He shapes a programme around it, not an off-the-shelf workshop.</span></div>
+          <div><b>On the day</b><span>He leads and adapts to the room, so you can take part as a leader and leave with decisions or learning you can use.</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="sec wrap" aria-labelledby="t-h">
-    <p class="label">What teams say</p>
-    <h2 class="big" id="t-h">Don't take our word for it</h2>
-    <div class="quotes">
-      <div class="tq-row"><figure class="vid"><video src="media/accor-day.mp4" poster="media/accor-day-poster.jpg" autoplay muted loop playsinline controls preload="none" aria-label="Short film from the Accor leadership day at RAK BKK"></video></figure>
-      <blockquote class="tq lead"><p>“I have been working in hospitality for almost 20 years and I have never experienced a workshop like that.”</p><cite>Erik Koning · Accor</cite></blockquote></div>
-      
-      
+  <section class="sec wrap" id="offers" aria-labelledby="o-h">
+    <p class="label">Ways to work with Sam</p>
+    <h2 class="big" id="o-h">Start from what your team needs</h2>
+    <p class="intro2">Four starting points for a conversation, not a fixed menu. Each is shaped around your group, and a retreat can include elements of the focused sessions.</p>
+    <div class="offers">
+      <article>
+        <p class="for">For executive teams</p>
+        <h3>Leadership Urban Retreats</h3>
+        <p>Step out of day-to-day demands, reconnect and prepare for honest, expansive strategic conversations. Sam can prepare the ground for your strategy discussion or facilitate it.</p>
+        <details><summary>Read more</summary><p>When an executive team comes together to think about the future, the time is valuable, and often rare. The experience creates space to consider different perspectives, imagine possibilities and build a bigger picture together.</p></details>
+      </article>
+      <article>
+        <p class="for">For leaders with their teams</p>
+        <h3>Team Culture Labs</h3>
+        <p>Surface assumptions, clear up misunderstandings and build a shared understanding of how you work together, with the trust and working agreements that make collaboration last.</p>
+        <details><summary>Read more</summary><p>Sam helps the group explore how they communicate, respond to difference and change, and share responsibility for the work. Teams make explicit the permissions people need to speak up, contribute, take ownership and feel a genuine sense of belonging in the group's success.</p></details>
+      </article>
+      <article>
+        <p class="for">For a specific challenge or decision</p>
+        <h3>Strategy &amp; Alignment Sessions</h3>
+        <p>Structured working sessions that move from exploring the question to priorities, roles and an actionable plan. Your team brings the expertise and owns the decisions; Sam runs the process.</p>
+        <details><summary>Read more</summary><p>Sam guides the group through exploring the question, generating possibilities and making sense of different perspectives before narrowing towards a way forward, so what emerges becomes tangible short- and long-term outcomes.</p></details>
+      </article>
+      <article>
+        <p class="for">For leaders growing their practice</p>
+        <h3>Leadership Practice Labs</h3>
+        <p>A sandbox for practice, feedback and reflection, built on real leadership situations. Leaders deepen their presence, social awareness and emotional capacity, and widen their range of responses.</p>
+        <details><summary>Read more</summary><p>Practical skills for facilitating conversations, coaching and inquiry, communicating authentically, listening across differences and creating shared understanding across teams, functions and stakeholders. Sessions may explore storytelling, navigating complexity or influencing without formal authority.</p></details>
+      </article>
     </div>
+  </section>
+
+  <section class="sec wrap" id="accor" aria-labelledby="a-h">
+    <p class="label">Recently at the house</p>
+    <h2 class="big" id="a-h">Accor's commercial leaders, MEAPAC</h2>
+    <p class="intro2">About 18 leaders from Accor's Middle East, Africa and Asia Pacific commercial team spent their offsite at RAK BKK. As part of it, Sam led sessions on courage, care and trust, laying the relational groundwork for the team's strategic conversations.</p>
+    <div class="amos">
+      <img src="img/accor-retreat-01.jpg" alt="Small-group conversation in the blue-lit lounge">
+      <img src="img/accor-retreat-03.jpg" alt="Three leaders listening and taking notes upstairs">
+      <img src="img/accor-retreat-13.jpg" alt="Working session around the long table upstairs">
+    </div>
+    <div class="tq-row" style="margin-top:40px">
+      <figure class="vid"><video src="media/accor-day.mp4" poster="media/accor-day-poster.jpg" autoplay muted loop playsinline controls preload="none" aria-label="Short film from the Accor leadership day at RAK BKK"></video></figure>
+      <blockquote class="tq lead"><p>“I have been working in hospitality for almost 20 years and I have never experienced a workshop like that.”</p><cite>Erik Koning · Accor</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="activities" aria-labelledby="x-h">
+    <p class="label">Team activities · additional fee</p>
+    <h2 class="big" id="x-h">Add some play to the day</h2>
+    <p class="intro2">Hands-on activities to open a retreat, reset after lunch or end the day together. Add any of them to a buyout. Some can be woven into a facilitated session as a shared experience to learn from.</p>
+    <div class="acts">
+      <article class="feat"><span class="tag">Collaboration · Change</span><h3>Giant block challenge</h3><p>Teams build and play a giant wooden tower together. Every turn means planning, steady hands and staying calm when things wobble. When it falls, you rebuild. A lively way into conversations about risk, trust and change.</p></article>
+      <article class="feat"><span class="tag">Learning how to learn</span><h3>Juggling workshop</h3><p>Most of the room can learn a basic three-ball pattern in an hour. Small steps, lots of drops, picking it up and trying again. A live lesson in how people learn new skills, and how teams handle change.</p></article>
+      <article><span class="tag">Listening · Ideas</span><h3>Improv session</h3><p>Simple games that build listening, quick thinking and building on each other's ideas.</p></article>
+      <article><span class="tag">Movement</span><h3>Dance lesson</h3><p>A short, joyful group class. No experience needed, plenty of laughter.</p></article>
+      <article><span class="tag">Charoen Krung</span><h3>Neighbourhood food tour</h3><p>Old Bangkok's street food and family shops, a short walk from the door.</p></article>
+      <article><span class="tag">Charoen Krung</span><h3>Art walk</h3><p>Galleries and studios in Bangkok's creative district, with a local guide.</p></article>
+      <article><span class="tag">Evening</span><h3>Karaoke night</h3><p>The house sound system, a long playlist and a team that sees each other differently by midnight.</p></article>
+      <article><span class="tag">Evening</span><h3>Private live music</h3><p>A short set from the musicians behind our Chamber Nights, in the house.</p></article>
+    </div>
+  </section>
+
+  <section class="sec wrap" aria-labelledby="h-h">
+    <p class="label">How it works</p>
+    <h2 class="big" id="h-h">From first note to the day itself</h2>
+    <ol class="steps">
+      <li><b>Tell us what you're planning</b><span>Your team, the date and what you'd like the time to achieve. We reply within one working day.</span></li>
+      <li><b>See the house</b><span>A free 30-minute walk-through, or a call if you're not in Bangkok.</span></li>
+      <li><b>Scope it with Sam</b><span>If you'd like facilitation, Sam joins a conversation about your purpose and your group before anything is proposed.</span></li>
+      <li><b>One clear proposal</b><span>Venue, food, activities and facilitation, each priced on its own line.</span></li>
+    </ol>
   </section>
 
   <section class="sec wrap" aria-labelledby="f-h">
     <p class="label">Questions</p>
     <h2 class="big" id="f-h">Good to know</h2>
     <div class="faq">
+      <details><summary>Do we have to book Sam?</summary><p>No. Sam is optional and charged separately. Many teams book the house for their own programme; others ask Sam to design and lead all or part of the day.</p></details>
+      <details><summary>Can we bring our own facilitator?</summary><p>Of course. The house works just as well for your own programme, and our team will help set up the rooms.</p></details>
       <details><summary>Can you handle dietary needs?</summary><p>Yes. Tell us about allergies, halal, vegetarian or vegan needs when you book and we'll plan every meal around them.</p></details>
       <details><summary>What AV do you have?</summary><p>A projector, a full sound system, microphones, modular lighting, whiteboards and chalkboards. WiFi covers both floors.</p></details>
       <details><summary>Can we visit first?</summary><p>Please do. Walk-throughs are free and take about 30 minutes, any weekday.</p></details>
-      <details><summary>Can we bring our own facilitator?</summary><p>Of course. The house works just as well for your own programme, and our team will help set up the rooms.</p></details>
     </div>
   </section>
 
   <section class="enq-wrap wrap" id="ask" aria-labelledby="q-h">
     <div>
       <p class="label">Next step</p>
-      <h2 class="big" id="q-h">Come and see the house</h2>
-      <p class="intro2">Tell us a little about your team and the date you have in mind. We'll reply within one working day with availability and a quote.</p>
+      <h2 class="big" id="q-h">Tell us about your team</h2>
+      <p class="intro2">Share a little about your group, the date you have in mind and what you'd like the time to achieve. We'll reply within one working day, and if you'd like facilitation, we'll set up a conversation with Sam.</p>
       <p class="addr" style="font-size:24px">385 Charoenkrung Soi 45<br>Bang Rak, Bangkok 10500</p>
     </div>
     <form class="enq" id="enquiry" novalidate>
@@ -344,10 +480,10 @@
         <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
         <label>Email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
         <label>Phone or WhatsApp<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
-        <label>What are you planning?<select id="f-type" name="type"><option>Full-Day Buyout</option><option>Half-Day Reset</option><option>Evening Buyout</option><option>A walk-through first</option><option>Chamber Nights tickets</option><option>Something else</option></select></label>
-        <label>Group size<input id="f-size" name="size" inputmode="numeric" placeholder="e.g. 20"></label>
-        <label class="full">Preferred date<input id="f-date" name="date" placeholder="e.g. mid-November, a Tuesday"></label>
-        <label class="full">Anything else we should know?<textarea id="f-msg" name="message"></textarea></label>
+        <label>What are you planning?<select id="f-type" name="type"><option>A facilitated leadership retreat</option><option>Full-Day Buyout</option><option>Half-Day Reset</option><option>Evening Buyout</option><option>A team activity</option><option>A walk-through first</option><option>Something else</option></select></label>
+        <label>Group size<input id="f-size" name="size" inputmode="numeric" placeholder="e.g. 18"></label>
+        <label class="full">Preferred date<input id="f-date" name="date" placeholder="e.g. mid-January, a Tuesday"></label>
+        <label class="full">What would you like the time to achieve?<textarea id="f-msg" name="message"></textarea></label>
         <button type="submit">Send enquiry</button>
         <p class="msg" id="f-out" role="status" aria-live="polite"></p>
       </form>

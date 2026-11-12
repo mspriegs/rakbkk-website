@@ -66,3 +66,16 @@ figure.vid video { display: block; width: 100%; max-width: 420px; aspect-ratio: 
 .pack, .ev, .fund, .person, .formats div, .ticket, .fac { background: transparent; }
 .formats div, .person { border-top: 1px solid var(--ink); padding-left: 0; padding-right: 0; }
 .topics span { background: transparent; }
+
+/* Community drop-down: Chamber Nights + Neighbourhood live under Community */
+header.site nav .navgroup { position: relative; }
+header.site nav .navgroup-top::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: 8px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-3px) rotate(45deg); }
+header.site nav .navgroup-menu { display: none; position: absolute; top: calc(100% + 12px); left: -18px; padding: 14px 18px 16px; background: var(--ground); border: 1px solid var(--rule); flex-direction: column; gap: 14px; min-width: 200px; z-index: 20; }
+header.site nav .navgroup-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -14px; height: 14px; }
+header.site nav .navgroup:hover .navgroup-menu,
+header.site nav .navgroup:focus-within .navgroup-menu { display: flex; }
+@media (max-width:1080px) {
+  header.site nav .navgroup-top::after { display: none; }
+  header.site nav .navgroup-menu { display: flex; position: static; border: 0; padding: 14px 0 0 16px; min-width: 0; background: transparent; gap: 16px; }
+  header.site nav .navgroup-menu::before { display: none; }
+}
